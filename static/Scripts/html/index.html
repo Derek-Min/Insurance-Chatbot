@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title> Shield - 24/7 Customer Support</title>
+</head>
+<body>
+       <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="../../images/shield-logo.png" alt="Shield AI Logo" class="logo-image" style="width: 40px; height: 40px;">
+                <span class="logo-text">shield</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary" onclick="showModal('loginModal')">
+                    Log In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Landing Section -->
+        <section class="section landing" id="home">
+            <div class="geometric-bg">
+                <div class="geometric-shape shape-1"></div>
+                <div class="geometric-shape shape-2"></div>
+                <div class="geometric-shape shape-3"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Breakthrough <span class="highlight">AI from Data to Deployment</span></h1>
+                        <p class="hero-subtitle">Shield delivers proven customer support, evaluations, and outcomes to retail businesses, e-commerce platforms.</p>
+                        <p class="hero-description">Transform your customer experience with intelligent automation that works 24/7, understands context, and scales with your business needs.</p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#" class="btn-cta" onclick="showModal('registerModal')">Register Now</a>
+                            <a href="#about" class="btn-demo">Learn More</a>
+                        </div>
+                        
+
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="visual-container">
+                            <div class="floating-card card-1">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                    <div style="width: 8px; height: 8px; background: #22c55e; border-radius: 50%;"></div>
+                                    <span style="font-size: 0.8rem; color: var(--text-secondary);">Active Now</span>
+                                </div>
+                                <p style="font-size: 0.9rem; color: var(--text-primary);">24/7 Support Active</p>
+                            </div>
+                            
+                            <div class="floating-card card-2">
+                                <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
+                                <p style="font-size: 0.9rem; color: var(--text-primary);">Real-time Analytics</p>
+                            </div>
+                            
+                            <div class="floating-card card-3">
+                                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                    <i class="fas fa-robot" style="color: var(--accent-color);"></i>
+                                    <span style="font-size: 0.9rem; color: var(--text-primary);">AI Assistant</span>
+                                </div>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary);">How can I help you today?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Why Choose Shield AI?</h2>
+                    <p class="section-subtitle">Advanced AI-powered customer support designed specifically for retail and e-commerce</p>
+                    <p class="section-description">Our platform combines cutting-edge natural language processing with deep retail domain expertise to deliver exceptional customer experiences at scale.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>24/7 Intelligent Support</h3>
+                        <p>Never miss a customer inquiry with our always-on AI that provides instant, contextual responses to complex retail questions, from product information to order tracking.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Machine Learning at Scale</h3>
+                        <p>Advanced algorithms that continuously learn from customer interactions, improving accuracy and personalizing responses based on purchase history and preferences.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Advanced Analytics</h3>
+                        <p>Comprehensive insights into customer behavior, satisfaction metrics, and operational efficiency with real-time dashboards and predictive analytics.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Seamless Integration</h3>
+                        <p>Connect with your existing CRM, inventory management, and e-commerce platforms through our robust API infrastructure and pre-built connectors.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Role-Based Access</h3>
+                        <p>Granular permission controls with distinct interfaces for customer service representatives, managers, and business partners with customizable workflows.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Enterprise Security</h3>
+                        <p>Bank-grade encryption, GDPR compliance, and SOC 2 Type II certification to protect your customer data and maintain trust.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about Shield AI</p>
+                </div>
+                
+                <div class="faq-content">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How quickly can I deploy RetailBot AI?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most retail businesses can deploy Shield AI within 24-48 hours. Our streamlined onboarding process includes data integration, custom training on your product catalog, and comprehensive testing before going live.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Can RetailBot handle complex customer inquiries?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our AI is trained on retail-specific scenarios including product recommendations, order management, returns processing, warranty inquiries, and technical support. For complex cases requiring human judgment, the system seamlessly escalates to your team.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>What's the difference between Assistant and Partner access?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Assistant access provides customer support tools, basic analytics, and chat management. Partner access includes advanced business intelligence, system configuration, user management, revenue tracking, and strategic insights for decision-making.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How secure is my customer data?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Security is our top priority. We use AES-256 encryption, maintain SOC 2 Type II certification, comply with GDPR and CCPA, and undergo regular security audits. Customer data is never used for training other models or shared with third parties.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Can I customize the AI's responses and behavior?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, extensively. You can customize the AI's tone, upload your brand guidelines, train it on your specific products and policies, set escalation rules, and create custom workflows. The system learns and adapts to your brand voice over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 class="section-title">Ready to Transform Your Customer Support?</h2>
+                        <p class="section-subtitle">Join thousands of retail businesses already using Shield AI</p>
+                        
+                        <div style="margin-top: 3rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                                <div style="width: 40px; height: 40px; background: var(--gradient-primary); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-envelope" style="color: white; font-size: 1rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--text-primary); margin-bottom: 0.25rem;">Email Support</h4>
+                                    <span style="color: var(--text-secondary);">support@shield-ai.com</span>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                                <div style="width: 40px; height: 40px; background: var(--gradient-primary); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-phone" style="color: white; font-size: 1rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--text-primary); margin-bottom: 0.25rem;">Phone Support</h4>
+                                    <span style="color: var(--text-secondary);">+60 (555) 123-4567</span>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <div style="width: 40px; height: 40px; background: var(--gradient-primary); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-map-marker-alt" style="color: white; font-size: 1rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="color: var(--text-primary); margin-bottom: 0.25rem;">Headquarters</h4>
+                                    <span style="color: var(--text-secondary);"> Kuala Lumper, Malaysia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3 style="margin-bottom: 2rem; color: var(--text-primary); font-weight: 600;">Send us a message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="name" required>
+                                <div class="error-message">Please enter your full name</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" required>
+                                <div class="error-message">Please enter a valid email address</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Company</label>
+                                <input type="text" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea name="message" rows="5" placeholder="Tell us about your customer support challenges..." required></textarea>
+                                <div class="error-message">Please enter your message</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="hideModal('loginModal')">×</button>
+            <h2 style="margin-bottom: 2rem; text-align: center; color: var(--text-primary);">Welcome Back</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                    <div class="error-message">Please enter a valid email address</div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                    <div class="error-message">Password is required</div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                    <i class="fas fa-sign-in-alt"></i> Sign In
+                </button>
+            </form>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary);">
+                Don't have an account? 
+                <a href="#" onclick="hideModal('loginModal'); showModal('registerModal');" style="color: var(--accent-color); text-decoration: none;">Create one here</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <button class="modal-close" onclick="hideModal('registerModal')">×</button>
+            <h2 style="margin-bottom: 2rem; text-align: center; color: var(--text-primary);">Create Your Account</h2>
+            <form id="registerForm">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="fullName" required>
+                        <div class="error-message">Full name is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required>
+                        <div class="error-message">Please enter a valid email</div>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" required>
+                        <div class="error-message">Phone number is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="AU">Australia</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="SG">Singapore</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error-message">Please select your country</div>
+                    </div>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label>NRIC/ID Number</label>
+                        <input type="text" name="nric" required>
+                        <div class="error-message">NRIC/ID is required</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Birth</label>
+                        <input type="date" name="dateOfBirth" required>
+                        <div class="error-message">Date of birth is required</div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="termsConsent" id="termsConsent" required>
+                        <label for="termsConsent">I agree to the <a href="#" style="color: var(--accent-color);">Terms of Service</a> and <a href="#" style="color: var(--accent-color);">Privacy Policy</a></label>
+                    </div>
+                    <div class="error-message">You must agree to the terms and conditions</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1rem;">
+                    <i class="fas fa-user-plus"></i> Create Account
+                </button>
+            </form>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary);">
+                Already have an account? 
+                <a href="#" onclick="hideModal('registerModal'); showModal('loginModal');" style="color: var(--accent-color); text-decoration: none;">Sign in here</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div>
+                <h3>Shield AI Assistant</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Online • Ready to help</p>
+            </div>
+            <button onclick="hideChat()" style="background: none; border: none; color: var(--text-secondary); font-size: 1.2rem; cursor: pointer;">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-bubble">
+                    <p>Hello! I'm your AI customer support assistant. How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
